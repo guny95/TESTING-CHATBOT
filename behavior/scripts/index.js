@@ -1,7 +1,7 @@
 'use strict'
 
 exports.handle = (client) => {
-  // Create steps
+  // Create steps -
   const sayHello = client.createStep({
     satisfied() {
       return Boolean(client.getConversationState().helloSent)
